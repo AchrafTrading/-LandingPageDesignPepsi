@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Buy</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Assumenda reiciendis porro, eaque adipisci optio sunt officia 
+                     tempore maxime soluta doloribus, esse quasi error fugiat ipsum 
+                     itaque tenetur minus minima atque.</p>
+                     <a href="#">View all product</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+            <ul class="thumb">
+                <li><img src="img/pepsi001.png" onclick="changePeps('img/pepsi001.png'); changeColor('#0062be')"></li>
+                <li><img src="img/pepsi002.png" onclick="changePeps('img/pepsi002.png'); changeColor('#e60c2c')"></li>
+                <li><img src="img/pepsi003.png" onclick="changePeps('img/pepsi003.png'); changeColor('#1e1e1e')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a><img src="img/facebook.png"></a></li>
+                <li><a><img src="img/instagram.png"></a></li>
+                <li><a><img src="img/twitter.png"></a></li>
+            </ul>
+        <script>
+            function changePeps(val){
+                document.querySelector('.pepsi').src = val;
+            }
+            function changeColor(color){
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+        </script>
+    </section>
+</body>
+</html>
